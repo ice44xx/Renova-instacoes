@@ -1,0 +1,128 @@
+@media(max-width: 980px){
+    .container-promess{
+        .heading-promess{
+            h1{
+                margin-bottom: 20px;
+                font-size: 40px;
+            }
+            h2{
+                margin-bottom: 20px;
+                font-size: 25px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        .container-benefits{
+            .heading-benefits{
+                .img-line{
+                    margin-top: -25px;
+                    margin-left: 35px;
+                    height: 52px;
+                    
+                }
+                h1{
+                    font-size: 35px;
+                }
+               
+            }
+        }
+    }
+}
+@media(max-width: 750px){
+    .container-form{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .heading-form{
+            span{
+                color: $font-color;
+            }
+            .arrow{
+                display: none;
+            }
+            .h1-desktop{
+                display: none;
+            }
+            .h1-mobile{
+                display: block;
+                margin-top: 50px;
+            }
+        }
+        .form{
+            margin-bottom: 50px;
+        }
+    }
+}
+@media(max-width: 700px){
+    #navbar{
+        ul{
+            display: none;
+        }
+    }
+    .container-home{
+        .background{
+            display: none;
+        }
+    }
+    .container-promess{
+        .heading-promess{
+            h1{
+                margin-bottom: 20px;
+                font-size: 40px;
+            }
+            h2{
+                margin-bottom: 20px;
+                font-size: 25px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        .container-benefits{
+            .heading-benefits{
+                .img-line{
+                    margin-top: -25px;
+                    margin-left: 35px;
+                    height: 52px;
+                    
+                }
+                h1{
+                    font-size: 35px;
+                }
+            }
+            .container-box{
+                .content-box{
+                    height: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    .item-1{
+                        grid-row: 1;
+                    }
+                    .item-2{
+                        grid-row: 1;
+                    }
+                    .item-3{
+                        grid-row: 2;
+                    }
+                    .item-4{
+                        grid-row: 2;
+                    }
+                    .box{
+                        margin: 0 auto;
+                        max-width: 220px;
+                    }
+                }
+            }
+        }
+    }
+    .container-about{
+        min-height: 40vh;
+        height: 100%;
+        .about{
+            width: 520px;
+            min-height: 40vh;
+        }
+    }
+}

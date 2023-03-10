@@ -1,0 +1,11 @@
+$background-color: #153a50;
+$font-color:  #f9e8d0;
+$font-roboto: 'Roboto', sans-serif;
+
+.btn{
+    z-index: 1;
+    padding: 15px 20px;
+    background-color: transparent;
+    border: 2px solid $font-color;
+    cursor: pointer;
+}
