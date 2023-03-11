@@ -18,6 +18,20 @@ for(i = 0; i < videos.length; i++){
     })
 }
 
+
+const line = document.querySelector('.lineone')
+const linetwo = document.querySelector('.linetwo')
+const linethree = document.querySelector('.linethree')
+const hamburger = document.getElementById('hamburger')
+const wall = document.getElementById('wall')
+hamburger.addEventListener('click', function (){
+  wall.classList.toggle('close')
+  line.classList.toggle('active')
+  linetwo.classList.toggle('active')
+  linethree.classList.toggle('active')
+})
+
+
 var swiper = new Swiper(".mySwiper", {
   
     slidesPerView: 4,

@@ -17,13 +17,37 @@
 <body>
     <header>
         <nav id = 'navbar'>
-            <ul>
-                <li>Home</li>
-                <li>Services</li>
-                <li>Galeria</li>
-                <li>Contato</li>
-            </ul>
-            <img src="/src/img/logo-min.png" alt="">
+            <div class="toogle">
+
+            </div>
+            <div class="container-desktop">
+                <ul>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>Galeria</li>
+                    <li>Contato</li>
+                </ul>
+                <img src="/src/img/logo-min.png" alt="">
+            </div>
+            <div class="container-mobile">
+                <div class="hamburger-line" id = 'hamburger'>
+                    <div class="container-line">
+                        <span class="lineone"></span>
+                        <span class="linetwo"></span>
+                        <span class="linethree"></span>
+                    </div>
+                   
+                </div>
+                <div class="wall" id = 'wall'>
+                    <ul>
+                        <img src="/src/img/logo-min.png" alt="">
+                        <li>Home</li>
+                        <li>Serviços</li>
+                        <li>Galeria</li>
+                        <li>Contato</li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -39,7 +63,12 @@
         </div>
         <div class="container-logo">
             <img src="../src/img/logo-teste.png" alt="" class = 'logo'>
-            <button class = 'btn'><p>Faça seu orçamento</p></button>
+            <div class="button-home">
+                <h1>FAÇA SEU ORÇAMENTO</h1>
+                <div class="button-img">
+                    <img src="/src/img/back-button.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
 
@@ -53,41 +82,68 @@
             <img src="/src/img/back-g.png" alt="">
         </div>
         <div class="heading-promess">
-            <h1>Lorem ipsum dolor sit amet.</h1>
-            <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, officia?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione enim maiores minima deleniti modi eveniet.</p>
+            <div class="heading-box">
+                <h1>Solução Elétrica para <span>qualquer projeto</span>.</h1>
+                <h2>projetos residenciais ou para projetos complexos que exigem <span>alta maestria</span>.</h2>
+                <h3>10 anos de mercado, + 200 projetos atendidos.</h3>
+                <h4><span>líder em projetos extremamente importantes.</span></h4>
+            </div>
         </div>
 
         <div class="container-benefits">
             <div class="heading-benefits">
-                <h1>Nossos serviços</h1>
+                <h1>Vantagens</h1>
                 <img src="/src/img/line-for-text.png" class = 'img-line' alt="">
             </div>
 
             <div class="container-box">
                 <div class="content-box">
                     <div class="box item-1">
-                        <img src="/src/img/icons/comercial.png" class = 'icon' alt="">
-                        <h1 class = 'title'>Comercial</h1>
-                        <p class = 'desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptas fugiat dicta.</p>
+                        <div class="icon-box">
+                            <img src="/src/img/shield.png" class = 'icon' alt="">
+                        </div>
+                        <div class="title">
+                            <h1>Segurança</h1>
+                        </div>
+                        <div class="desc">
+                            <p>Garantia de <span>segurança</span> nas instalações elétricas, zerando riscos de acidentes.</p>
+                        </div>
                     </div>
     
                     <div class="box item-2">
-                        <img src="/src/img/icons/predial.png" class = 'icon' alt="">
-                        <h1 class = 'title'>Predial</h1>
-                        <p class = 'desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptas fugiat dicta.</p>
+                        <div class="icon-box">
+                            <img src="/src/img/medal.png" class = 'icon' alt="">
+                        </div>
+                        <div class="title">
+                            <h1>Qualidade</h1>
+                        </div>
+                        <div class="desc">
+                            <p>Utilizamos materiais e equipamentos de <span>qualidade</span>, garantindo a <span>durabilidade</span> das instalações elétricas. </p>
+                        </div>
                     </div>
                     
                     <div class="box item-3">
-                        <img src="/src/img/icons/industrial.png" class = 'icon' alt="">
-                        <h1 class = 'title'>Industrial</h1>
-                        <p class = 'desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptas fugiat dicta.</p>
+                        <div class="icon-box">
+                            <img src="/src/img/eletric.png" class = 'icon' alt="">
+                        </div>
+                        <div class="title">
+                            <h1>Eficiência</h1>
+                        </div>
+                        <div class="desc">
+                            <p>Profissionais que realizam serviços de forma <span>rápida</span> e <span>eficaz</span> com conhecimento técnico e prático.</p>
+                        </div>
                     </div>
                     
                     <div class="box item-4">
-                        <img src="/src/img/icons/residencial.png" class = 'icon' alt="">
-                        <h1 class = 'title'>Residencial</h1>
-                        <p class = 'desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptas fugiat dicta.</p>
+                        <div class="icon-box">
+                            <img src="/src/img/sup.png" class = 'icon' alt="">
+                        </div>
+                        <div class="title">
+                            <h1>Suporte</h1>
+                        </div>
+                        <div class="desc">
+                            <p>Suporte <span>técnico</span> e esclarecimento de dúvidas sobre instalações elétricas.</p>
+                        </div>
                     </div>
                 </div>
                 
@@ -99,7 +155,7 @@
         <img src="/src/img/teste.png" class = 'img-right' alt="">
         <img src="/src/img/teste2.png" class = 'img-left' alt="">
         <div class="heading-gallery">
-            <h1>Confira nossos projetos</h1>
+            <h1>Nossos <span>Serviços</span></h1>
         </div>
 
         <div class="container-swiper">
@@ -113,7 +169,7 @@
                                 <h1>Predial</h1>
                             </div>
                             <div class="desc">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, ab?</p>
+                                <p>Uma equipe para liderar seu projeto de elétrica predial, construção civil.</p>
                             </div>
                         </div>
                     </div>
@@ -127,7 +183,7 @@
                             <h1>Industrial</h1>
                         </div>
                         <div class="desc">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nihil?</p>
+                            <p>Energia confiável e eficiente para seus equipamentos industriais.</p>
                         </div>
                     </div>
                 </div>
@@ -140,7 +196,7 @@
                                 <h1>Comercial</h1>
                             </div>
                             <div class="desc">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nihil?</p>
+                                <p>Instalação, reformas e reparos ágil para o seu estabelecimento, entrar em atividade.</p>
                             </div>
                         </div>
                     </div>
@@ -153,7 +209,7 @@
                                 <h1>Residencial</h1>
                             </div>
                             <div class="desc">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam mollitia nam exercitationem fugiat quae.</p>
+                                <p>Soluções imediatas para o sua casa, evite prejuízos com não-profissionais.</p>
                             </div>
                         </div>
                     </div>
@@ -170,7 +226,7 @@
     <div class="container-about">
         <div class="about">
             <h1>Renova Instalações</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque officia soluta illo consequuntur tempora, cum, mollitia ducimus eum vel ipsam dignissimos laudantium labore? Placeat vitae rerum, ducimus aliquam esse cum.</p>
+            <p>Renova Instalações é uma empresa de engenharia elétrica especializada em soluções completas e personalizadas para instalações elétricas eficientes e seguras. Com uma equipe de engenheiros e técnicos especializados, fornecemos excelência em nossos serviços e garantimos a satisfação total de nossos clientes.</p>
         </div>
     </div>
 
@@ -196,6 +252,14 @@
         </div>
     </div>
 
+    <div class="container-partnership">
+        <div class="heading-partnership">
+            <h2>você é dono de construtora, imobiliária ou arquiteto?</h2>
+            <h1><span>ganhe dinheiro com indicações!</span></h1>
+            <h2>além de te ajudar hoje, você pode ganhar comissões lucrativas nos incluindo em outros projetos no futuro!</h2>
+        </div>
+    </div>
+
     <div class="container-contact">
         <div class="heading-contact">
             <h1>Nossas Redes</h1>
@@ -204,23 +268,23 @@
         <div class="container-redes">
             <div class="redes">
                 <img src="./img/instagram.png" class = 'icon' alt="">
-                <p></p>
+                
             </div>
 
             <div class="redes">
                 <img src="./img/email.png" class = 'icon' alt="">
-                <p></p>
+                
             </div>
 
             <div class="redes">
                 <img src="./img/whatsaap.png" class = 'icon' alt="">
-                <p></p>
+                
             </div>
         </div>
     </div>
 
     <footer>
-        <p>2023 prod por | AMPLIFY METAS</p>
+        <p>Privacy Policy - 2023 | Prod por <span>AMPLIFY - METAS</span> <i class="fa-regular fa-heart"></i></p>
     </footer>
     
 
