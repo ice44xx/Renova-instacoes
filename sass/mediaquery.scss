@@ -2,21 +2,17 @@
     .container-promess{
         .heading-promess{
             .heading-box{
-                margin-top: 10px;
                 h1{
-                    margin-bottom: 20px;
-                    font-size: 35px;
+                    font-size: 45px;
                 }
                 h2{
-                    margin: 20px 0;
                     font-size: 25px;
                 }
                 h3{
-                    font-size: 25px;
-                    margin: 20px 0;
+                    font-size: 20px;
                 }
                 h4{
-                    font-size: 30px;
+                    font-size: 25px;
                 }
                 span{
                     color: $background-color;
@@ -76,6 +72,29 @@
         }
     }
 }
+@media(max-width: 800px){
+    .container-promess{
+        .heading-promess{
+            .heading-box{
+                h1{
+                    font-size: 40px;
+                }
+                h2{
+                    font-size: 22px;
+                }
+                h3{
+                    font-size: 20px;
+                }
+                h4{
+                    font-size: 25px;
+                }
+                span{
+                    color: $background-color;
+                }
+            }
+        }
+    }
+}
 @media(max-width: 750px){
     .container-form{
         height: 100%;
@@ -102,7 +121,12 @@
     }
 }
 @media(max-width: 700px){
+    header{
+        background-color: transparent;
+        height: 0;
+    }
     #navbar{
+        background-color: transparent;
         .container-desktop{
             img{
                 display: none;
@@ -113,14 +137,8 @@
         }
         .container-mobile{
             display: flex;
-            width: 100%;
-            height: 100%;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
             .hamburger-line{
-                z-index: 1;
+                z-index: 99999;
                 min-height: 40px;
                 position: absolute;
                 display: flex;
@@ -146,23 +164,23 @@
                         margin: 4px;
                         transition: all 0.3s ease-out;
                     }
-                    .lineone{
+                    .lineone.active{
                         transform: rotate(45deg) translate(8px, 7px);
                       }
-                    .linetwo{
+                    .linetwo.active{
                         display: none;
                     }
-                    .linethree{
+                    .linethree.active{
                         transform: rotate(-45deg) translate(-1px, 0px);
                     }
-                    .lineone.active{
+                    .lineone{
                         transform: rotate(0deg) translate(0px, 0px);
                     }
-                    .linetwo.active{
+                    .linetwo{
                         display: block;
                         transform: rotate(0deg) translate(0px, 0px);
                     }
-                    .linethree.active{
+                    .linethree{
                         transform: rotate(0deg) translate(0px, 0px);
                     }
                 }
@@ -197,28 +215,6 @@
             display: none;
         }
     }
-    .container-promess{
-        .heading-promess{
-            .heading-box{
-                h1{
-                    font-size: 30px;
-                }
-                h2{
-                    margin: 20px 0;
-                    font-size: 20px;
-                }
-                h3{
-                    font-size: 20px;
-                }
-                h4{
-                    font-size: 25px;
-                }
-                span{
-                    color: $background-color;
-                }
-            }
-        }
-    }
 }
 @media(max-width: 620px){
     .container-promess{
@@ -236,8 +232,8 @@
 }
 @media(max-width: 570px){
     .container-home{
-        min-height: 100vh;
-        background-color: $background-color;
+        height: 100vh;
+        background-color: #123346;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -247,25 +243,7 @@
     }
     .container-about{
         background-image: none;
-    }
-    .container-promess{
-        .heading-promess{
-            .heading-box{
-                h1{
-                    font-size: 35px;
-                }
-                h2{
-                    font-size: 20px;
-                }
-                h3{
-                    font-size: 20px;
-                }
-                h4{
-                    font-size: 25px;
-                }
-            }
-        }
-    }   
+    } 
     .container-contact{
         background-position: left;
         background-size: 180px;
@@ -303,22 +281,31 @@
             }
         }
     }
+    .container-promess{
+        .heading-promess{
+            .heading-box{
+                h1{
+                    margin-top: 50px;
+                    font-size: 35px;
+                }
+                h2{
+                    font-size: 22px;
+                }
+                h3{
+                    font-size: 20px;
+                }
+                h4{
+                    font-size: 25px;
+                }
+                span{
+                    color: $background-color;
+                }
+            }
+        }
+    }
 }
 @media(max-width: 470px){
     .container-promess{
-        .heading-promess{
-            h1{
-                margin-bottom: 20px;
-                font-size: 40px;
-            }
-            h2{
-                margin-bottom: 20px;
-                font-size: 25px;
-            }
-            p{
-                font-size: 20px;
-            }
-        }
         .container-benefits{
             .container-box{
                 .content-box{
@@ -347,20 +334,6 @@
             }
         }
     }
-    .container-whats{
-        z-index: 1;
-        bottom: 20px;
-        right: 20px;
-        position: fixed;
-        .whats-icon{
-            width: 50px;
-        }
-        .glow{
-            -webkit-box-shadow:0px 0px 105px 20px rgba(63,255,46,1);
-            -moz-box-shadow: 0px 0px 105px 20px rgba(63,255,46,1);
-            box-shadow: 0px 0px 105px 20px rgba(63,255,46,1);
-        }
-    }
 }
 @media(max-width:390px){
     footer{
@@ -374,17 +347,14 @@
             font-size: 12px;
         }
     }
-}
-@media(max-width: 360px){
     .container-promess{
         .heading-promess{
             .heading-box{
-                padding: 0 5px;
                 h1{
-                    font-size: 32px;
+                    font-size: 30px;
                 }
                 h2{
-                    font-size: 18px;
+                    font-size: 20px;
                 }
                 h3{
                     font-size: 18px;
@@ -392,9 +362,15 @@
                 h4{
                     font-size: 20px;
                 }
+                span{
+                    color: $background-color;
+                }
+                #count-market, #count-projects{
+                    font-size: 25px;
+                }
             }
         }
-    }   
+    }
 }
 @media(max-width: 345px){
     .container-form{
@@ -411,22 +387,6 @@
         }
     }
     .container-promess{
-        .heading-promess{
-            .heading-box{
-                h1{
-                    font-size: 32px;
-                }
-                h2{
-                    font-size: 18px;
-                }
-                h3{
-                    font-size: 18px;
-                }
-                h4{
-                    font-size: 20px;
-                }
-            }
-        }
         .container-benefits{
             .heading-benefits{
                 .img-line{
@@ -493,17 +453,21 @@
     .container-promess{
         .heading-promess{
             .heading-box{
+                padding: 0 5px;
                 h1{
-                    font-size: 25px;
+                    font-size: 28px;
                 }
                 h2{
-                    font-size: 17px;
+                    font-size: 18px;
                 }
                 h3{
-                    font-size: 17px;
+                    font-size: 18px;
                 }
                 h4{
                     font-size: 20px;
+                }
+                span{
+                    color: $background-color;
                 }
             }
         }

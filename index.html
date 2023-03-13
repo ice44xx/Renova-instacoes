@@ -17,17 +17,14 @@
 <body>
     <header>
         <nav id = 'navbar'>
-            <div class="toogle">
-
-            </div>
             <div class="container-desktop">
                 <ul>
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>Galeria</li>
-                    <li>Contato</li>
+                    <img src="/img/logo-min.png">
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#services"><li>Serviços</li></a>
+                    <a href="#about"><li>Empresa</li></a>
+                    <a href="#contact"><li>Contato</li></a>
                 </ul>
-                <img src="/src/img/logo-min.png" alt="">
             </div>
             <div class="container-mobile">
                 <div class="hamburger-line" id = 'hamburger'>
@@ -38,69 +35,65 @@
                     </div>
                    
                 </div>
-                <div class="wall" id = 'wall'>
+                <div id = 'wall'>
                     <ul>
-                        <img src="/src/img/logo-min.png" alt="">
-                        <li>Home</li>
-                        <li>Serviços</li>
-                        <li>Galeria</li>
-                        <li>Contato</li>
+                        <img src="/img/logo-min.png" alt="logo">
+                        <a href="#home"><li>Home</li></a>
+                        <a href="#services"><li>Serviços</li></a>
+                        <a href="#about"><li>Empresa</li></a>
+                        <a href="#contact"><li>Contato</li></a>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div class="container-home">
-        <div class="background">
+    <div class="container-home" id = 'home'>
+        <div class="background" >
             <div class="left">
-                <img src="/img/left.png" alt="">
+                <img src="/img/left.png">
             </div>
             <div class="right">
-                <img src="/img/right.png" alt="">
+                <img src="/img/right.png">
             </div>
             
         </div>
         <div class="container-logo">
-            <img src="/img/logo-home.png" alt="" class = 'logo'>
-            <div class="button-home">
-                <h1>FAÇA SEU ORÇAMENTO</h1>
-                <div class="button-img">
-                    <img src="/img/back-button.png" alt="">
-                </div>
-            </div>
+            <img src="/img/logo-home.png" class = 'logo'>
+            <img src="/img/arrow-down.png" class = 'arrow-home'>
         </div>
-    </div>
-
-    <div class="container-whats">
-        <img src="/img/whats.png" class = 'whats-icon' alt="">
-        <div class="glow"></div>
     </div>
 
     <div class="container-promess">
         <div class="back-g">
-            <img src="/img/back-g.png" alt="">
+            <img src="/img/back-g.png" alt="background">
         </div>
         <div class="heading-promess">
             <div class="heading-box">
                 <h1>Solução Elétrica para <span>qualquer projeto</span>.</h1>
                 <h2>projetos residenciais ou para projetos complexos que exigem <span>alta maestria</span>.</h2>
-                <h3>10 anos de mercado, + 200 projetos atendidos.</h3>
+                <h3>+<span id = 'count-market'>10</span> anos de mercado.<br> +<span id = 'count-projects'>0</span> projetos atendidos.</h3>
                 <h4><span>líder em projetos extremamente importantes.</span></h4>
+            </div>
+            <div class="container-button">
+                <div class="button-btn">
+                    <img src="/img/back-button.png">
+                    <a href="#form"><p>FAÇA SEU ORÇAMENTO</p></a>
+                </div>
             </div>
         </div>
 
         <div class="container-benefits">
             <div class="heading-benefits">
                 <h1>Vantagens</h1>
-                <img src="/img/line-for-text.png" class = 'img-line' alt="">
+                <img src="/img/line-for-text.png" class = 'img-line'>
             </div>
 
             <div class="container-box">
                 <div class="content-box">
                     <div class="box item-1">
                         <div class="icon-box">
-                            <img src="/img/shield.png" class = 'icon' alt="">
+                            <img src="/img/shield.png" class = 'icon' alt="Segurança">
                         </div>
                         <div class="title">
                             <h1>Segurança</h1>
@@ -112,7 +105,7 @@
     
                     <div class="box item-2">
                         <div class="icon-box">
-                            <img src="/img/medal.png" class = 'icon' alt="">
+                            <img src="/img/medal.png" class = 'icon' alt="Medalha">
                         </div>
                         <div class="title">
                             <h1>Qualidade</h1>
@@ -124,7 +117,7 @@
                     
                     <div class="box item-3">
                         <div class="icon-box">
-                            <img src="/img/eletric.png" class = 'icon' alt="">
+                            <img src="/img/eletric.png" class = 'icon' alt="Elétrica">
                         </div>
                         <div class="title">
                             <h1>Eficiência</h1>
@@ -136,7 +129,7 @@
                     
                     <div class="box item-4">
                         <div class="icon-box">
-                            <img src="/img/sup.png" class = 'icon' alt="">
+                            <img src="/img/sup.png" class = 'icon' alt="Suporte">
                         </div>
                         <div class="title">
                             <h1>Suporte</h1>
@@ -151,9 +144,9 @@
         </div>
     </div>
 
-    <div class="container-gallery">
-        <img src="/img/img-eletric.png" class = 'img-right' alt="">
-        <img src="/img/img-eletric-two.png" class = 'img-left' alt="">
+    <div class="container-gallery" id = 'services'>
+        <img src="/img/img-eletric.png" class = 'img-right'>
+        <img src="/img/img-eletric-two.png" class = 'img-left'>
         <div class="heading-gallery">
             <h1>Nossos <span>Serviços</span></h1>
         </div>
@@ -161,83 +154,98 @@
         <div class="container-swiper">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="box">
-                        <video src="/img/videos/1.mp4" class = 'video'></video>
-                        <div class="heading">
-                            <div class="title">
-                                <h1>Predial</h1>
-                            </div>
-                            <div class="desc">
-                                <p>Uma equipe para liderar seu projeto de elétrica predial, construção civil.</p>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
 
-                  <div class="swiper-slide">
-                    <div class="box">
-                    <video src="/img/videos/2.mp4" class = 'video'></video>
-                    <div class="heading">
-                        <div class="title">
-                            <h1>Industrial</h1>
-                        </div>
-                        <div class="desc">
-                            <p>Energia confiável e eficiente para seus equipamentos industriais.</p>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <video class = 'video' poster = './img/poster/1.jpg'>
+                                <source src = '/img/videos/1.mp4' type="video/mp4">
+                                <source src = '/img/videos/ios/1.webm' type="video/webm">
+                            </video>
+                            <div class="heading">
+                                <div class="title">
+                                    <h1>Predial</h1>
+                                </div>
+                                <div class="desc">
+                                    <p>Uma equipe para <span>liderar</span> seu projeto de elétrica predial, construção civil.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="box">
-                        <video src="/img/videos/3.mp4" class = 'video'></video>
+
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <video class = 'video' poster = './img/poster/2.jpg'>
+                                <source src = '/img/videos/2.mp4' type="video/mp4">
+                                <source src = '/img/videos/ios/2.webm' type="video/webm">
+                            </video>
                         <div class="heading">
                             <div class="title">
-                                <h1>Comercial</h1>
+                                <h1>Industrial</h1>
                             </div>
                             <div class="desc">
-                                <p>Instalação, reformas e reparos ágil para o seu estabelecimento, entrar em atividade.</p>
+                                <p>Energia <span>confiável</span> e <span>eficiente</span> para seus equipamentos industriais.</p>
                             </div>
                         </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="box">
-                        <video src="/img/videos/4.mp4" class = 'video'></video>
-                        <div class="heading">
-                            <div class="title">
-                                <h1>Residencial</h1>
-                            </div>
-                            <div class="desc">
-                                <p>Soluções imediatas para o sua casa, evite prejuízos com não-profissionais.</p>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <video class = 'video' poster = './img/poster/3.jpg'>
+                                <source src = '/img/videos/3.mp4' type="video/mp4">
+                                <source src = '/img/videos/ios/3.webm' type="video/webm">
+                            </video>
+                            <div class="heading">
+                                <div class="title">
+                                    <h1>Comercial</h1>
+                                </div>
+                                <div class="desc">
+                                    <p>Instalação, reformas e reparos <span>ágil</span> para o seu estabelecimento, entrar em atividade.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                  </div>
+
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <video class = 'video' poster = './img/poster/4.jpg'>
+                                <source src = '/img/videos/4.mp4' type="video/mp4">
+                                <source src = '/img/videos/ios/4.webm' type="video/webm">
+                            </video>
+                            <div class="heading">
+                                <div class="title">
+                                    <h1>Residencial</h1>
+                                </div>
+                                <div class="desc">
+                                    <p>Soluções <span>imediatas</span> para o sua casa, evite prejuízos com não-profissionais.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
- 
     </div>
 
-    <div class="container-about">
+    <div class="container-about" id = 'about'>
         <div class="about">
             <h1>Renova Instalações</h1>
-            <p>Renova Instalações é uma empresa de engenharia elétrica especializada em soluções completas e personalizadas para instalações elétricas eficientes e seguras. Com uma equipe de engenheiros e técnicos especializados, fornecemos excelência em nossos serviços e garantimos a satisfação total de nossos clientes.</p>
+            <p>Renova Instalações é uma empresa de serviços elétrica especializada em soluções completas e personalizadas para instalações elétricas eficientes e seguras. Com uma equipe de técnicos especializados, fornecemos excelência em nossos serviços e garantimos a satisfação total de nossos clientes.</p>
         </div>
     </div>
 
-    <div class="container-form">
+    <div class="container-form" id = 'form'>
         <div class="heading-form">
             <h1 class = 'h1-desktop'>Preencha ao lado para <span>Renovar</span> suas Instalações</h1>
             <h1 class = 'h1-mobile'>Preencha abaixo para <span>Renovar</span> suas Instalações</h1>
-            <img src="/img/arrow.png" class = 'arrow' alt="">
+            <img src="/img/arrow.png" class = 'arrow'>
         </div>
         <div class="container-content">
-            <img src="/img/person-test.png" class = 'person' alt="">
+            <img src="/img/person-test.png" class = 'person'>
             <form action="" class="form">
                 <label for="">Nome</label>
                 <input type="text">
@@ -260,24 +268,24 @@
         </div>
     </div>
 
-    <div class="container-contact">
+    <div class="container-contact" id = 'contact'>
         <div class="heading-contact">
-            <h1>Nossas Redes</h1>
+            <h1>Contacte-nos</h1>
         </div>
 
         <div class="container-redes">
             <div class="redes">
-                <img src="/img/instagram.png" class = 'icon' alt="">
+                <a href="https://www.instagram.com/renova_instalacoes/" target="_blank"><img src="/img/instagram.png" class = 'icon' alt="Instagram"></a>
                 
             </div>
 
             <div class="redes">
-                <img src="/img/email.png" class = 'icon' alt="">
+                <a href="mailto:renovainstacoes@gmail.com?subject=Problema Elétrico?&body=Gostaria dos serviços da Renova Instalações."><img src="/img/email.png" class = 'icon' alt="Email"></a>
                 
             </div>
 
             <div class="redes">
-                <img src="/img/whatsaap.png" class = 'icon' alt="">
+                <a href="http://api.whatsapp.com/send?1=pt_BR&phone=555190147098" target="_blank"><img src="/img/whatsaap.png" class = 'icon' alt="Whatsaap"></a>
                 
             </div>
         </div>
@@ -286,7 +294,6 @@
     <footer>
         <p>Privacy Policy - 2023 | Prod por <span>AMPLIFY - METAS</span> <i class="fa-regular fa-heart"></i></p>
     </footer>
-    
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src = 'index.js'></script>

@@ -3,6 +3,40 @@ window.addEventListener('scroll', function () {
     nav.classList.toggle('fixed', this.window.scrollY > 0)
 })
 
+
+var display = document.getElementById('count-projects')
+var count = 0
+var duration = 3000
+var interval = 80
+var steps = duration / interval
+var increment = 100 / steps
+
+var timer = setInterval(function () {
+  count += increment
+  display.innerText = Math.round(count)
+  if(count >= 100){
+    clearInterval(timer);
+    display.innerText = '100'
+  }
+}, interval)
+
+var displayMarket = document.getElementById('count-market')
+var countMarket = 0
+var durationTimer = 3000
+var intervalTimer = 30
+var stepsTimer = duration/intervalTimer
+var incrementValue = 10 / steps
+
+var timerMarket = setInterval(function () {
+  countMarket += incrementValue
+  displayMarket.innerText = Math.round(countMarket)
+  if(countMarket >= 10){
+    clearInterval(timerMarket)
+    displayMarket.innerText = '10'
+  }
+},intervalTimer)
+
+
 let videos = document.getElementsByClassName('video')
 
 for(i = 0; i < videos.length; i++){
@@ -25,7 +59,7 @@ const linethree = document.querySelector('.linethree')
 const hamburger = document.getElementById('hamburger')
 const wall = document.getElementById('wall')
 hamburger.addEventListener('click', function (){
-  wall.classList.toggle('close')
+  wall.classList.toggle('open')
   line.classList.toggle('active')
   linetwo.classList.toggle('active')
   linethree.classList.toggle('active')
