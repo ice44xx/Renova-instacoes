@@ -12,12 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
     <header>
         <nav id = 'navbar'>
-            <div class="container-desktop">
+            <div class="container-desktop" data-aos="fade-down" data-aos-duration="1500">
                 <ul>
                     <img src="/img/logo-min.png">
                     <a href="#home"><li>Home</li></a>
@@ -26,7 +27,7 @@
                     <a href="#contact"><li>Contato</li></a>
                 </ul>
             </div>
-            <div class="container-mobile">
+            <div class="container-mobile" >
                 <div class="hamburger-line" id = 'hamburger'>
                     <div class="container-line">
                         <span class="lineone"></span>
@@ -59,7 +60,7 @@
             
         </div>
         <div class="container-logo">
-            <img src="/img/logo-home.png" class = 'logo'>
+            <img src="/img/logo-home.png" class = 'logo' data-aos="zoom-in" data-aos-duration="1500">
             <img src="/img/arrow-down.png" class = 'arrow-home'>
         </div>
     </div>
@@ -70,12 +71,12 @@
         </div>
         <div class="heading-promess">
             <div class="heading-box">
-                <h1>Solução Elétrica para <span>qualquer projeto</span>.</h1>
-                <h2>projetos residenciais ou para projetos complexos que exigem <span>alta maestria</span>.</h2>
-                <h3>+<span id = 'count-market'>10</span> anos de mercado.<br> +<span id = 'count-projects'>0</span> projetos atendidos.</h3>
-                <h4><span>líder em projetos extremamente importantes.</span></h4>
+                <h1 data-aos="fade-left" data-aos-duration="1500">Solução Elétrica para <span>qualquer projeto</span>.</h1>
+                <h2 data-aos="fade-right" data-aos-duration="1800">projetos residenciais ou para projetos complexos que exigem <span>alta maestria</span>.</h2>
+                <h3 data-aos="fade-left" data-aos-duration="2000">+<span id = 'count-market'>10</span> anos de mercado.<br> +<span id = 'count-projects'>0</span> projetos atendidos.</h3>
+                <h4 data-aos="fade-right" data-aos-duration="2200"><span>líder em projetos extremamente importantes.</span></h4>
             </div>
-            <div class="container-button">
+            <div class="container-button" data-aos="fade-right" data-aos-duration="2400">
                 <div class="button-btn">
                     <img src="/img/back-button.png">
                     <a href="#form"><p>FAÇA SEU ORÇAMENTO</p></a>
@@ -84,12 +85,12 @@
         </div>
 
         <div class="container-benefits">
-            <div class="heading-benefits">
+            <div class="heading-benefits" data-aos="fade-left" data-aos-duration="1500">
                 <h1>Vantagens</h1>
                 <img src="/img/line-for-text.png" class = 'img-line'>
             </div>
 
-            <div class="container-box">
+            <div class="container-box" data-aos="fade-right" data-aos-duration="1500">
                 <div class="content-box">
                     <div class="box item-1">
                         <div class="icon-box">
@@ -147,18 +148,18 @@
     <div class="container-gallery" id = 'services'>
         <img src="/img/img-eletric.png" class = 'img-right'>
         <img src="/img/img-eletric-two.png" class = 'img-left'>
-        <div class="heading-gallery">
+        <div class="heading-gallery" data-aos="fade-left" data-aos-duration="1500">
             <h1>Nossos <span>Serviços</span></h1>
         </div>
 
         <div class="container-swiper">
             <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper" data-aos="fade-right" data-aos-duration="1500">
 
                     <div class="swiper-slide">
                         <div class="box">
                             <video class = 'video' poster = './img/poster/1.jpg'>
-                                <source src = '/img/videos/1.mp4' type="video/mp4">
+                                <source src = '/img/videos/android/1.mp4' type="video/mp4">
                                 <source src = '/img/videos/ios/1.webm' type="video/webm">
                             </video>
                             <div class="heading">
@@ -175,7 +176,7 @@
                     <div class="swiper-slide">
                         <div class="box">
                             <video class = 'video' poster = './img/poster/2.jpg'>
-                                <source src = '/img/videos/2.mp4' type="video/mp4">
+                                <source src = '/img/videos/android/2.mp4' type="video/mp4">
                                 <source src = '/img/videos/ios/2.webm' type="video/webm">
                             </video>
                         <div class="heading">
@@ -192,7 +193,7 @@
                     <div class="swiper-slide">
                         <div class="box">
                             <video class = 'video' poster = './img/poster/3.jpg'>
-                                <source src = '/img/videos/3.mp4' type="video/mp4">
+                                <source src = '/img/videos/android/3.mp4' type="video/mp4">
                                 <source src = '/img/videos/ios/3.webm' type="video/webm">
                             </video>
                             <div class="heading">
@@ -209,7 +210,7 @@
                     <div class="swiper-slide">
                         <div class="box">
                             <video class = 'video' poster = './img/poster/4.jpg'>
-                                <source src = '/img/videos/4.mp4' type="video/mp4">
+                                <source src = '/img/videos/android/4.mp4' type="video/mp4">
                                 <source src = '/img/videos/ios/4.webm' type="video/webm">
                             </video>
                             <div class="heading">
@@ -233,19 +234,21 @@
 
     <div class="container-about" id = 'about'>
         <div class="about">
-            <h1>Renova Instalações</h1>
-            <p>Renova Instalações é uma empresa de serviços elétrica especializada em soluções completas e personalizadas para instalações elétricas eficientes e seguras. Com uma equipe de técnicos especializados, fornecemos excelência em nossos serviços e garantimos a satisfação total de nossos clientes.</p>
+            <div class="heading-about">
+                <h1 data-aos="fade-right" data-aos-duration="1500">Renova Instalações</h1>
+                <p data-aos="fade-left" data-aos-duration="1800">Renova Instalações é uma empresa de serviços elétrica especializada em soluções completas e personalizadas para instalações elétricas eficientes e seguras.</p>
+            </div>
         </div>
     </div>
 
     <div class="container-form" id = 'form'>
         <div class="heading-form">
-            <h1 class = 'h1-desktop'>Preencha ao lado para <span>Renovar</span> suas Instalações</h1>
-            <h1 class = 'h1-mobile'>Preencha abaixo para <span>Renovar</span> suas Instalações</h1>
-            <img src="/img/arrow.png" class = 'arrow'>
+            <h1 class = 'h1-desktop' data-aos="fade-right" data-aos-duration="1500">Preencha ao lado para <span>Renovar</span> suas Instalações</h1>
+            <h1 class = 'h1-mobile' data-aos="fade-right" data-aos-duration="1500">Preencha abaixo para <span>Renovar</span> suas Instalações</h1>
+            <img src="/img/arrow.png" class = 'arrow' data-aos="fade-right" data-aos-duration="1500">
         </div>
-        <div class="container-content">
-            <img src="/img/person-test.png" class = 'person'>
+        <div class="container-content" data-aos="zoom-in" data-aos-duration="1500">
+            <img src="/img/person.png" class = 'person'>
             <form action="" class="form">
                 <label for="">Nome</label>
                 <input type="text">
@@ -260,20 +263,20 @@
         </div>
     </div>
 
-    <div class="container-partnership">
+    <div class="container-partnership" >
         <div class="heading-partnership">
-            <h2>você é dono de construtora, imobiliária ou arquiteto?</h2>
-            <h1><span>ganhe dinheiro com indicações!</span></h1>
-            <h2>além de te ajudar hoje, você pode ganhar comissões lucrativas nos incluindo em outros projetos no futuro!</h2>
+            <h2 data-aos="fade-down" data-aos-duration="1500">você é dono de construtora, imobiliária ou arquiteto?</h2>
+            <h1 data-aos="zoom-in" data-aos-duration="1500"><span>ganhe dinheiro com indicações!</span></h1>
+            <h2 data-aos="fade-up" data-aos-duration="1500">além de te ajudar hoje, você pode ganhar comissões lucrativas nos incluindo em outros projetos no futuro!</h2>
         </div>
     </div>
 
     <div class="container-contact" id = 'contact'>
         <div class="heading-contact">
-            <h1>Contacte-nos</h1>
+            <h1 data-aos="fade-left" data-aos-duration="1500">Contacte-nos</h1>
         </div>
 
-        <div class="container-redes">
+        <div class="container-redes" data-aos="fade-right" data-aos-duration="1500">
             <div class="redes">
                 <a href="https://www.instagram.com/renova_instalacoes/" target="_blank"><img src="/img/instagram.png" class = 'icon' alt="Instagram"></a>
                 
@@ -297,6 +300,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src = 'index.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({once: true});</script>
 
 </body>
 </html>

@@ -56,18 +56,16 @@
         }
     }
     .container-about{
-        height: 100%;
-        min-height: 30vh;
+        height: 40vh;
         .about{
-            max-width: 520px;
-            width: 100%;
-            min-height: 30vh;
-            h1{
-                font-size: 30px;
-            }
-            p{
-                font-size: 20px;
-                margin-top: 20px;
+            .heading-about{
+                h1{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 20px;
+                    margin-top: 20px;
+                }
             }
         }
     }
@@ -242,7 +240,15 @@
         overflow: hidden;
     }
     .container-about{
-        background-image: none;
+        background-image: url('/img/background-mobile.png');
+        background-position: right;
+        background-size: cover;
+        .about{
+            background: none;
+            box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
+            backdrop-filter: blur(0px);
+            -webkit-backdrop-filter: blur(0px);
+        }
     } 
     .container-contact{
         background-position: left;
@@ -436,7 +442,6 @@
                 font-size: 30px;
             }
             p{
-                font-weight: 300;
                 font-size: 18px;
             }
         }
